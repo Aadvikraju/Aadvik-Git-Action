@@ -6,6 +6,11 @@ on:
      description: this is info demo
      required: true
      default: dev
+     type: choice
+     options:
+       - dev
+       - qa
+       - test
     tags:
      description: this is demo
      required: true
