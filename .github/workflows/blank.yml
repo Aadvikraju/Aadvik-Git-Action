@@ -6,6 +6,10 @@ on:
      description: this is info demo
      required: true
      default: dev
+   tags:
+     description: this is info demo
+     required: true
+     default: 1.0.0
 
 
 jobs:
@@ -13,5 +17,5 @@ jobs:
    runs-on: ubuntu-latest
    steps:
      - name: run advikdemo
-       run: echo " deploy the application ${{inputs.envinorment}}"
+       run: echo " deploy the ${{ inputs.tags }} application ${{inputs.envinorment}}"
    
