@@ -1,0 +1,17 @@
+name: advikdemo
+on: 
+ workflow_dispatch:
+  inputs:
+    envinorment:
+     description: this is info demo
+     required: true
+     default: dev
+
+
+jobs:
+  advikdemo:
+   runs-on: ubuntu-latest
+   steps:
+     - name: run advikdemo
+       run: echo " deploy the application ${{inputs.envinorment}}"
+   
